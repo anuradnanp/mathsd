@@ -73,7 +73,7 @@ function showQuestion(question) {
 		answerButtonsElement.appendChild(button);
 	});
 	document.getElementById(shuffledQuestions[currentQuestionIndex].bahas).innerText = "";
-	document.getElementById(shuffledQuestions[currentQuestionIndex].bahas).insertAdjacentHTML("afterbegin", Function('return ' + shuffledQuestions[currentQuestionIndex].bahas)());
+	document.getElementById(shuffledQuestions[currentQuestionIndex].bahas).insertAdjacentHTML('afterbegin', Function('return ' + shuffledQuestions[currentQuestionIndex].bahas)());
 	ambienceImage.innerText = "";
 	ambienceImage.insertAdjacentHTML('afterbegin', '<img src="aset/' + Math.floor(Math.random() * numAmbienceImage + 1).toString().padStart(2, "0") + '.svg" style="width: 150px; transform: scale(' + [-1, 1][Math.round(Math.random())] + ', 1)">');
 	MathJax.typeset();
